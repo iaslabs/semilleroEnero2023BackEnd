@@ -1,0 +1,34 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: "semillero-api"
+  devtools:
+    add-properties: false
+  profiles:
+    include: null
+  datasource:
+    url: "jdbc:postgresql://localhost:5432/semillero"
+    username: "postgres"
+    password: "admin"
+    driverClassName: "org.postgresql.Driver"
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create
+    database: postgresql
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: "debug"
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "health"
+  endpoint:
+    health:
+      probes:
+        enabled: true
