@@ -4,13 +4,9 @@ import co.com.ias.semilleroapi.domain.model.Product;
 import co.com.ias.semilleroapi.domain.model.dto.ProductDTO;
 import co.com.ias.semilleroapi.domain.model.gateways.ProductRepository;
 import lombok.AllArgsConstructor;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
-import java.util.stream.Collectors;
 
-@Service
 @AllArgsConstructor
 public class ProductUseCase {
 

@@ -13,7 +13,7 @@ spring:
     password: "admin"
     driverClassName: "org.postgresql.Driver"
   jpa:
-    show-sql: true
+    show-sql: false
     generate-ddl: true
     hibernate:
       ddl-auto: create

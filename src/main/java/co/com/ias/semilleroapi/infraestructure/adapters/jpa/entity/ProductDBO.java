@@ -4,12 +4,10 @@ import co.com.ias.semilleroapi.domain.model.Product;
 import co.com.ias.semilleroapi.domain.model.ProductCode;
 import co.com.ias.semilleroapi.domain.model.ProductName;
 import co.com.ias.semilleroapi.domain.model.ProductPrice;
-import co.com.ias.semilleroapi.domain.model.dto.ProductDTO;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
-import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity

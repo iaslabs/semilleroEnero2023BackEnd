@@ -20,7 +20,7 @@ public class ProductApiRest {
 
     @GetMapping("/product")
     public ResponseEntity<List<ProductDTO>> getProducts(){
-        return null;
+        return new ResponseEntity<>(productUseCase.getProducts(), HttpStatus.OK);
     }
 
     @PostMapping("/product")
