@@ -23,15 +23,6 @@ public class ProductDBO {
 
     private Integer price;
 
-/*    public static ProductDBO fromResultSet(ResultSet resultSet) throws SQLException {
-        ProductDBO productDBO = new ProductDBO();
-        productDBO.setCode(resultSet.getString("code"));
-        productDBO.setName(resultSet.getString("name").trim());
-        productDBO.setPrice(resultSet.getInt("price"));
-
-        return productDBO;
-    }*/
-
     public Product toDomain() {
         return new Product(
                 new ProductCode(code),
