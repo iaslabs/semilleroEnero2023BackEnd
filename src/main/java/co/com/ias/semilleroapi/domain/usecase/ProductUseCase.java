@@ -13,8 +13,7 @@ public class ProductUseCase {
     private final ProductRepository productRepository;
 
     public ProductDTO saveProduct(ProductDTO productDTO){
-        productRepository.saveProduct(productDTO.toDomain());
-        return productDTO;
+        return ProductDTO.fromDomain(productRepository.saveProduct(productDTO.toDomain()));
     }
 
     public List<ProductDTO> getProducts(){

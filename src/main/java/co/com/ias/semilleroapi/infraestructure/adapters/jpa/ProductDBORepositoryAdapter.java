@@ -16,9 +16,7 @@ public class ProductDBORepositoryAdapter implements ProductRepository {
     private final ProductDBORepository productDBORepository;
     @Override
     public Product saveProduct(Product product) {
-        ProductDBO productDBO = ProductDBO.fromDomain(product);
-        productDBO = productDBORepository.save(productDBO);
-        return productDBO.toDomain();
+        return productDBORepository.save(ProductDBO.fromDomain(product)).toDomain();
     }
 
     @Override
