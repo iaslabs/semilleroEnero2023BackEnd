@@ -5,7 +5,7 @@ import static org.springframework.util.Assert.notNull;
 
 public class ProductCode {
 
-    private String value;
+    private final String value;
 
     public String getValue() {
         return value;
